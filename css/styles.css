@@ -19,6 +19,7 @@
   --icons-color: #afb1b8;
   --background-socials: rgba(255, 255, 255, 0.1);
   --work-aside-bg: rgba(47, 48, 58, 0.8);
+  --portfolio-bg: rgba(33, 150, 243, 0.9);
 }
 
 p,
@@ -180,7 +181,6 @@ body {
   height: 4px;
   background-color: var(--accent-color);
   content: "";
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover:after,
@@ -726,6 +726,28 @@ img {
 .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-thumb: {
+  position: relative;
+}
+
+.portfolio-thumb::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 370px;
+  height: 294px;
+  background-color: var(--portfolio-bg);
+  opacity: 0;
+  z-index: 1;
+}
+
+.portfolio-thumb:hover::before {
+  opacity: 1;
+}
+
+.portfolio-thumb-text {
 }
 
 .portfolio-title {
