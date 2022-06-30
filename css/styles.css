@@ -179,7 +179,7 @@ body {
   text-decoration: none;
 }
 
-.header-link::after {
+.header-link.active::after {
   content: "";
 
   position: absolute;
