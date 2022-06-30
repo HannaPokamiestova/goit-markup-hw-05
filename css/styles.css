@@ -24,6 +24,8 @@
   --modal-close-border-color: rgba(0, 0, 0, 0.1);
   --modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --transition-time: 250ms;
+  --transition-animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 p,
@@ -42,7 +44,7 @@ ol {
   padding-left: 0;
 }
 
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -179,19 +181,22 @@ body {
 
 .header-link::after {
   content: "";
-  display: block;
+
   position: absolute;
-  left: 453px;
-  width: 48px;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
   height: 4px;
   background-color: var(--accent-color);
-  border-radius: 2px;
+
+  opacity: 0;
+  transition: opacity var(--transition-time) var(--transition-animation);
 }
 
-.header-link:hover:after,
-.header-link:focus:after {
-  width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
-  text-decoration: underline;
+.header-link:hover:after {
+  opacity: 1;
 }
 
 .header-link:hover .site-contacts,
@@ -725,6 +730,10 @@ img {
   height: 100%;
   color: inherit;
   text-decoration: none;
+
+  transition-property: background-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--transition-animation);
 }
 
 .portfolio-link:hover,
@@ -753,6 +762,11 @@ img {
 }
 
 .portfolio-thumb-text {
+  display: none;
+}
+
+.item:hover .portfolio-set {
+  display: block;
 }
 
 .portfolio-title {
