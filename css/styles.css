@@ -177,6 +177,8 @@ body {
   position: relative;
   color: var(--accent-color);
   text-decoration: none;
+
+  transition: color var(--transition-time) var(--transition-animation);
 }
 
 .header-link.active::after {
@@ -384,9 +386,10 @@ body {
   bottom: 0;
 
   width: 100%;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 27px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-weight: 700;
   line-height: 1.14;
