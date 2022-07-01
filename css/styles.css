@@ -775,9 +775,11 @@ img {
   overflow: hidden;
 }
 
-.portfolio-thumb::before {
+.portfolio-overlay {
   display: inline-block;
   position: absolute;
+  top: 0;
+  left: 0;
   content: "";
   width: 370px;
   height: 294px;
@@ -787,12 +789,8 @@ img {
   transition: var(--transition-time) var(--transition-animation);
 }
 
-.portfolio-thumb:hover.portfolio-thumb::before {
+.portfolio-link:hover .portfolio-overlay {
   transform: translateX(0);
-}
-
-.portfolio-thumb-text {
-  position: absolute;
 }
 
 /* -----------------------MODALS--------------------- */
