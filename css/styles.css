@@ -794,7 +794,8 @@ img {
 
 .backdrop.is-hidden .modal-dialog {
   opacity: 0;
-  transform: scale(0.9);}
+  transform: scale(0.9);
+}
 
 .modal {
   position: absolute;
@@ -846,6 +847,4 @@ img {
   transition-timing-function: var(--transition-animation);
 
   cursor: pointer;
-}
-
 }
