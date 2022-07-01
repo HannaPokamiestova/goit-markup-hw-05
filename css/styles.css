@@ -786,6 +786,16 @@ img {
   transition: opacity var(--transition-time) var(--transition-animation);
 }
 
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal-dialog {
+  opacity: 0;
+  transform: scale(0.9);}
+
 .modal {
   position: absolute;
   width: 528px;
@@ -838,13 +848,4 @@ img {
   cursor: pointer;
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.backdrop.is-hidden .modal-dialog {
-  opacity: 0;
-  transform: scale(1);
 }
