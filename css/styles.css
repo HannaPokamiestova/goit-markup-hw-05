@@ -472,6 +472,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: var(--transition-time) var(--transition-animation),
+    background-color var(--transition-time) var(--transition-animation);
 }
 
 .team-soc-icon {
