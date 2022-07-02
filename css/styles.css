@@ -727,6 +727,8 @@ img {
   background-color: var(--secondary-background);
   cursor: pointer;
   border: none;
+
+  transition: color var(--transition-time) var(--transition-animation);
 }
 
 .portfolio-content {
