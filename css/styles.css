@@ -521,6 +521,8 @@ body {
 
   border: 1px solid var(--icons-color);
   border-radius: 4px;
+
+  transition: color var(--transition-time) var(--transition-animation);
 }
 
 .clients-icon {
@@ -619,6 +621,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: background-color var(--transition-time)
+    var(--transition-animation);
 }
 
 .footer-soc-icon {
