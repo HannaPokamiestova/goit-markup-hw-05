@@ -564,6 +564,7 @@ body {
   color: var(--secondary-text-color);
   text-decoration: none;
   margin-top: 20px;
+  transition: var(--transition-time) var(--transition-animation);
 }
 
 .footer-link-item:not(:last-child) {
