@@ -728,7 +728,10 @@ img {
   cursor: pointer;
   border: none;
 
-  transition: color var(--transition-time) var(--transition-animation);
+  color: #212121;
+  transition: color var(--transition-time) var(--transition-animation),
+    background-color var(--transition-time) var(--transition-animation),
+    box-shadow var(--transition-time) var(--transition-animation);
 }
 
 .portfolio-content {
