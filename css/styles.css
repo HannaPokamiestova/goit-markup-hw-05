@@ -26,6 +26,7 @@
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --transition-time: 250ms;
   --transition-animation: cubic-bezier(0.4, 0, 0.2, 1);
+  --form-color: rgba(33, 33, 33, 0.2);
 }
 
 p,
@@ -473,7 +474,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  transition: var(--transition-time) var(--transition-animation),
+  transition: color var(--transition-time) var(--transition-animation),
     background-color var(--transition-time) var(--transition-animation);
 }
 
@@ -522,7 +523,8 @@ body {
   border: 1px solid var(--icons-color);
   border-radius: 4px;
 
-  transition: color var(--transition-time) var(--transition-animation);
+  transition: color var(--transition-time) var(--transition-animation)
+    border-color var(--transition-time) var(--transition-animation);
 }
 
 .clients-icon {
@@ -809,22 +811,21 @@ img {
   margin: 0;
 
   font-size: 18px;
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
   line-height: 1.56;
 
   transform: translateY(100%);
   transition: var(--transition-time) var(--transition-animation);
 }
 
-.portfolio-link:hover .portfolio-overlay {
-  transform: translateX(0);
+.portfolio-link:hover .portfolio-overlay,
+.portfolio-link:focus {
+  transform: translateY(0);
 }
 
 .portfolio-overlay {
   width: 100%;
   height: 100%;
-
-  letter-spacing: 0, 03em;
   color: var(--white-color);
 }
 
@@ -877,7 +878,10 @@ img {
   max-width: 100%;
   min-height: 580px;
   margin: auto;
-  padding: 40px;
+  padding-left: 41px;
+  padding-top: 40px;
+  padding-right: 39px;
+  padding-bottom: 40px;
 
   transform: none;
   transition-property: transform, opacity;
@@ -908,4 +912,41 @@ img {
   transition-timing-function: var(--transition-animation);
 
   cursor: pointer;
+}
+
+.modal-title {
+  text-align: center;
+  line-height: 23px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-text {
+  width: 25px;
+  height: 14px;
+  padding-bottom: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--secondary-text-color);
+  letter-spacing: 0.01em;
+}
+
+.modal-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid var(--form-color);
+  border-radius: 4px;
+  margin-bottom: 28px;
+}
+
+.modal-input:hover {
+  border: 1px solid var(--accent-color);
 }
