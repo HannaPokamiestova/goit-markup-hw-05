@@ -664,6 +664,19 @@ body {
   padding-bottom: 15px;
   padding-top: 15px;
 }
+
+.modal-input::placeholder {
+  color: var(--color-footer);
+}
+
+.footer-item.subscription {
+  margin-left: auto;
+}
+
+.subscription-form {
+  display: flex;
+  align-items: center;
+}
 /*--------PORTFOLIO--------*/
 
 img {
