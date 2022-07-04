@@ -675,8 +675,12 @@ body {
 
 .subscription-form {
   display: flex;
-  align-items: center;
 }
+
+.button-subscription {
+  margin-top: 0px;
+}
+
 /*--------PORTFOLIO--------*/
 
 img {
@@ -956,7 +960,8 @@ img {
   margin-bottom: 30px;
 }
 
-.form-field {
+.form {
+  position: fixed;
   display: flex;
   flex-direction: column;
 }
@@ -971,8 +976,16 @@ img {
   line-height: 1.16;
   color: var(--secondary-text-color);
   letter-spacing: 0.01em;
+  fill: 20px;
 }
 
+.modal-comment {
+  width: 448px;
+  height: 120px;
+  border: 1px solid var(--form-color);
+  border-radius: 4px;
+  resize: none;
+}
 .modal-input {
   width: 448px;
   height: 40px;
