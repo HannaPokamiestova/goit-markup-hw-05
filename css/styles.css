@@ -1039,3 +1039,7 @@ img {
   margin-top: 10px;
   margin-bottom: 30 px;
 }
+
+.modal-link {
+  color: var(--accent-color);
+}

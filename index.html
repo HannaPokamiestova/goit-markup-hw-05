@@ -584,9 +584,17 @@
               placeholder="Введите текст"
             ></textarea>
 
-            <label class="agree" for=""
-              >Соглашаюсь с рассылкой и принимаю Условия договора</label
-            >
+            <label class="agree" for=""></label>
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="agreement"
+                value="1"
+                required
+              />
+              Соглашаюсь с рассылкой и принимаю 
+              <a class="link modal-link" href="">Условия договора</a>
+              </label>
             <button class="button button-acent" type="submit">Отправить</button>
           </form>
         </div>
