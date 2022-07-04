@@ -679,8 +679,14 @@ body {
 
 .button-subscription {
   margin-top: 0px;
+  margin-left: 10px;
+  line-height: 30px;
 }
 
+.subscription-button-icon {
+  margin-left: 10px;
+  padding: 0px;
+}
 /*--------PORTFOLIO--------*/
 
 img {
@@ -957,7 +963,9 @@ img {
   line-height: 23px;
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
 }
 
 .form {
@@ -979,20 +987,32 @@ img {
   fill: 20px;
 }
 
+.icon {
+  position: absolute;
+  left: 19px;
+
+  transform: translateX(-50%);
+  display: inline-block;
+}
+
 .modal-comment {
   width: 448px;
   height: 120px;
   border: 1px solid var(--form-color);
   border-radius: 4px;
   resize: none;
+  padding-left: 16px;
+  padding-top: 12px;
+  margin-bottom: 20px;
 }
 .modal-input {
   width: 448px;
   height: 40px;
   border: 1px solid var(--form-color);
   border-radius: 4px;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
   padding-left: 16px;
+  padding-top: 12px;
 }
 
 .modal-input:hover {
@@ -1003,8 +1023,19 @@ img {
   color: var(--secondary-text-colorйу);
 }
 
+.button-icon {
+}
+
 .button-acent {
   width: 200px;
   background-color: var(--background-buttom-color);
   box-shadow: var(--buttom-box-shadow);
+
+  margin: 0 auto;
+  display: block;
+}
+
+.modal-agree {
+  margin-top: 10px;
+  margin-bottom: 30 px;
 }
